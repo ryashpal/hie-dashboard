@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  fhir-server:
+    image: hapiproject/hapi:latest
+    ports:
+      - "80:8080"
+    environment:
+      - hapi.fhir.fhir_version=R4 
